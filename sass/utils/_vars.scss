@@ -1,0 +1,20 @@
+:root {
+  --primery-text-color: #212121;
+  --auxiliary-text-color: #757575;
+  --white-text: #ffffff;
+  --hover-color: #2196f3;
+  --hero-footer-color: #2f303a;
+  --background-color: #e5e5e5;
+  --auxiliary-background-color: #f5f4fa;
+}
+
+body {
+  color: var(--primery-text-color);
+  background-color: var(--white-text);
+
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+// div {
+//   /* outline: 2px solid red; */
+// }

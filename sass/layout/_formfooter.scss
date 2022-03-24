@@ -1,0 +1,40 @@
+.form-footer {
+  margin-left: 93px;
+}
+.form-footer__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.form-footer__input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-footer__footer-input {
+  display: block;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 0 15px 16px;
+  background-color: transparent;
+  margin-right: 12px;
+  color: #ffffff;
+}
+.form-footer__telegram {
+  display: block;
+  fill: #ffffff;
+  margin-left: 10px;
+}
+
+.form-footer__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

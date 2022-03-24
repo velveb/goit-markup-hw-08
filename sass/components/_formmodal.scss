@@ -1,0 +1,170 @@
+.backdrop__titl {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+
+.backdrop__label {
+  display: block;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--auxiliary-text-color);
+  margin-bottom: 10px;
+}
+.backdrop__span {
+  display: block;
+  position: relative;
+}
+
+.backdrop__label coment {
+  margin-bottom: 30px;
+}
+
+.textarea::placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.backdrop__input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 4px;
+  padding-left: 42px;
+  cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: #2196f3;
+  }
+
+  &:hover + .backdrop__formsvg {
+    fill: #2196f3;
+  }
+  &:focus + .backdrop__formsvg {
+    fill: #2196f3;
+  }
+}
+
+.backdrop__formsvg {
+  display: inline-block;
+  fill: #212121;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 15px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: #2196f3;
+  }
+  &:hover .backdrop__input {
+    border-color: #2196f3;
+  }
+}
+
+.textarea {
+  height: 120px;
+  padding-left: 16px;
+  resize: none;
+}
+
+.backdrop__btn {
+  display: block;
+  padding: 10px 56px;
+  margin: 0 auto;
+}
+
+/* checkbox  form*/
+
+.backdrop__checkbox {
+  margin-bottom: 30px;
+}
+
+.backdrop__checkboxlabel,
+.backdrop__link {
+  font-size: 14px;
+  line-height: 1.71;
+  color: #757575;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* .backdrop__checkboxlabel {
+  display: flex;
+  align-items: center;
+} */
+
+/* власний checkbox спосіб №1 */
+
+/* .backdrop__checkboxlabel::before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid #000000;
+  border-radius: 2px;
+  
+  margin-right: 7px;
+  cursor: pointer;
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+.backdrop__checkboxinput:checked + .backdrop__checkboxlabel::before  {
+ 
+  background-image: url(../images/icon-check.svg);
+  border: none;
+} */
+
+.backdrop__link {
+  color: var(--hover-color);
+}
+
+/* власний checkbox спосіб №2 використовуємо іконку зі спрайту */
+
+.backdrop__checkboxlabel span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #000000;
+  border-radius: 2px;
+  margin-right: 7px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: baound-collor 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop__onsvg {
+  fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop__checkboxinput:checked + .backdrop__checkboxlabel > span {
+  background-color: var(--hover-color);
+  border: none;
+
+  &:focus + .backdrop__checkboxlabel > span {
+    border-color: var(--hover-color);
+  }
+
+  &:checked + .backdrop__checkboxlabel > span {
+    background-color: var(--hover-color);
+    border: none;
+  }
+
+  &:checked + .backdrop__checkboxlabel svg {
+    fill: #ffffff;
+  }
+}

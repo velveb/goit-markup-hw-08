@@ -1,0 +1,36 @@
+.list__about-icon {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.about {
+  padding-bottom: 0;
+}
+
+.desc {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.list__itms-subtitle {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.list__items-text {
+  color: var(--auxiliary-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+}

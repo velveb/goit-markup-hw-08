@@ -1,0 +1,26 @@
+.network {
+  width: 206px;
+  margin-left: 70px;
+}
+
+.network__subtitle {
+  color: var(--white-text);
+
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 20px;
+
+  text-align: left;
+}
+
+.footer-linknetwork {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon {
+  fill: #ffffff;
+}
