@@ -1,6 +1,11 @@
 .team {
-  padding-top: 94px;
+  // padding-top: 94px;
+  padding-top: 60px;
   background-color: var(--auxiliary-background-color);
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 }
 
 .list-portrait__item {
@@ -10,6 +15,6 @@
   border-radius: 0px 0px 4px 4px;
 
   &:not(:last-child) {
-    margin-right: 30px;
+    // margin-right: 30px;
   }
 }

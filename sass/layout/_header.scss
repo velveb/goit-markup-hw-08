@@ -5,15 +5,23 @@
 }
 
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  // padding-bottom: 94px;
+  // padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 /* фото ГЕРОЙ */
 
 .overlay {
   max-width: 1600px;
-  height: 600px;
+  // height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
@@ -22,20 +30,52 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('../images/overlay.jpg');
+    url('../images/overlay-mob.jpg');
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
 
-  /* outline: 2px solid red; */
+  // todo картинка 2х mob
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/overlay-mob-2x.jpg');
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/overlay-tab.jpg');
+
+    // todo картинка 2х tab
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/overlay-tab-2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/overlay.jpg');
+
+    // todo картинка 2х
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/overlay-2x.jpg');
+    }
+  }
 }
+
 .flex {
   display: flex;
   align-items: center;
@@ -48,9 +88,9 @@
 .list {
   list-style: none;
 }
-.list__about {
-  display: flex;
-}
+// .list__about {
+//   display: flex; видалити
+// }
 
 .list-nav {
   display: flex;

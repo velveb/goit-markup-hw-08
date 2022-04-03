@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container flex">
         <nav class="site-nav">
           <a href="#" class="logo site-nav__logo">
@@ -56,7 +56,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main>
       <section class="section hero">
         <div class="overlay">
@@ -133,7 +133,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <!-- <section class="section">
         <div class="container picture">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="list pic">
@@ -172,18 +172,51 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <section class="section team">
         <div class="container ourteam">
           <h2 class="section__title subject">Наша команда</h2>
           <ul class="list list-portrait">
             <li class="list-portrait__item">
-              <img
-                src="./images/team-img1.jpg"
-                alt=" фото игорь демьяненко"
-                width="270"
-              />
+              <!--todo картинки  -->
+              <!-- <img
+              srcset="
+                ./images/team-img1.jpg        1x,
+                ./images/team-img1-2x-min.jpg 2x
+              "
+              src="./images/team-img4.jpg"
+              alt="фото михаил ермаков"
+              width="270"
+            /> -->
+              <!--? картинки 1х 2х -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-img1-1x-desctop-min.jpg 1x,
+                    ./images/team-img1-2x-desctop-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img1-1x-tab-min.jpg 1x,
+                    ./images/team-img1-2x-tab-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img1-1x-mob-min.jpg 1x,
+                    ./images/team-img1-2x-mob-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/team-img1.jpg"
+                  alt=" фото игорь демьяненко"
+                />
+              </picture>
               <div class="portrait">
                 <h3 class="portrait__name">Игорь Демьяненко</h3>
                 <p class="portrait__text">Product Designer</p>
@@ -226,11 +259,34 @@
               </div>
             </li>
             <li class="list-portrait__item">
-              <img
-                src="./images/team-img2.jpg"
-                alt=" фото ольга репина"
-                width="270"
-              />
+              <!--? картинки 1х 2х -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-img2-1x-desctop-min.jpg 1x,
+                    ./images/team-img2-2x-desctop-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img2-1x-tab-min.jpg 1x,
+                    ./images/team-img2-2x-tab-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img2-1x-mob-min.jpg 1x,
+                    ./images/team-img2-2x-mob-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/team-img2.jpg"
+                  alt=" фото игорь демьяненко"
+                />
+              </picture>
               <div class="portrait">
                 <h3 class="portrait__name">Ольга Репина</h3>
                 <p class="portrait__text">Frontend Developer</p>
@@ -273,11 +329,34 @@
               </div>
             </li>
             <li class="list-portrait__item">
-              <img
-                src="./images/team-img3.jpg"
-                alt="фото николай тарасов"
-                width="270"
-              />
+              <!--? картинки 1х 2х -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-img3-1x-desctop-min.jpg 1x,
+                    ./images/team-img3-2x-desctop-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img3-1x-tab-min.jpg 1x,
+                    ./images/team-img3-2x-tab-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img3-1x-mob-min.jpg 1x,
+                    ./images/team-img3-2x-mob-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/team-img3.jpg"
+                  alt=" фото игорь демьяненко"
+                />
+              </picture>
               <div class="portrait">
                 <h3 class="portrait__name">Николай Тарасов</h3>
                 <p class="portrait__text">Marketing</p>
@@ -320,11 +399,34 @@
               </div>
             </li>
             <li class="list-portrait__item">
-              <img
-                src="./images/team-img4.jpg"
-                alt="фото михаил ермаков"
-                width="270"
-              />
+              <!--? картинки 1х 2х -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-img4-1x-desctop-min.jpg 1x,
+                    ./images/team-img4-2x-desctop-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img4-1x-tab-min.jpg 1x,
+                    ./images/team-img4-2x-tab-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img4-1x-mob-min.jpg 1x,
+                    ./images/team-img4-2x-mob-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/team-img4.jpg"
+                  alt=" фото игорь демьяненко"
+                />
+              </picture>
               <div class="portrait">
                 <h3 class="portrait__name">Михаил Ермаков</h3>
                 <p class="portrait__text">UI Designer</p>
@@ -421,7 +523,9 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <!-- todo footer -->
+
+    <!-- <footer class="footer">
       <div class="container footer-content">
         <div class="div-address">
           <a href="#" class="logo div-address__logofooter">
@@ -488,7 +592,7 @@
           </ul>
         </div>
 
-        <!-- form footer -->
+       
 
         <div class="form-footer">
           <p class="form-footer__title">Подпишитесь на рассылку</p>
@@ -508,20 +612,21 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
-    <!-- modal -->
+    <!--todo  modal -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <!-- modal closed -->
+        <!-- todo modal closed -->
+
         <button type="button" class="backdrop__button" data-modal-close>
           <svg class="backdrop__icon" width="11" height="11">
             <use xlink:href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
 
-        <!-- form -->
+        <!--todo  form -->
 
         <p class="backdrop__titl">Оставьте свои данные, мы вам перезвоним</p>
 
