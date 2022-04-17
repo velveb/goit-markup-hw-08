@@ -4,6 +4,17 @@
 }
 
 .footer-content {
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
 }

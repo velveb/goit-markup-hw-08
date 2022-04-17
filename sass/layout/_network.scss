@@ -1,6 +1,12 @@
 .network {
   width: 206px;
-  margin-left: 70px;
+  // margin-left: 70px;
+  margin: 0 auto;
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
+
+  padding-bottom: 60px;
 }
 
 .network__subtitle {
@@ -14,7 +20,16 @@
 
   margin-bottom: 20px;
 
-  text-align: left;
+  // text-align: left;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 5px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    text-align: left;
+  }
 }
 
 .footer-linknetwork {

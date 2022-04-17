@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container flex">
         <nav class="site-nav">
           <a href="#" class="logo site-nav__logo">
@@ -57,6 +57,121 @@
             </a>
           </li>
         </ul>
+      </div>
+    </header> -->
+    <header class="header">
+      <div class="container flex">
+        <nav class="site-nav">
+          <a href="#" class="logo site-nav__logo">
+            Web
+            <span class="site-nav__logo--span">Studio</span>
+          </a>
+          <ul class="list list-nav">
+            <li class="list__item">
+              <a href="./index.html" class="list__link">Студия</a>
+            </li>
+            <li class="list__item">
+              <a href="./portfolio.html" class="list__link current">
+                Портфолио
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="" class="list__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list info">
+          <li class="list__item-message">
+            <a href="mailto:info@devstudio.com" class="list__email">
+              <svg class="list__icon-email" width="16" height="12">
+                <use xlink:href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="list__item-message">
+            <a href="tel:+380961111111" class="list__tel">
+              <svg class="list__icon-tel" width="10" height="16">
+                <use xlink:href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+        <!--? мобільне меню  кнопка-->
+
+        <button type="button" class="menu-open-btn">
+          <svg class="menu-open-btn__svg" width="24" height="16">
+            <use xlink:href="./images/icons.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
+      </div>
+      <!--? мобільне меню -->
+
+      <div class="mob-menu is-hidden">
+        <div class="container mob-container">
+          <div class="mob-mehu-top">
+            <button type="button" class="menu-close-btn">
+              <svg class="menu-close-btn__svg" width="19" height="19">
+                <use xlink:href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <!-- <div class="mob-container"> -->
+
+            <ul class="list mob-menu__nav">
+              <li class="mob-menu__item">
+                <a href="./index.html" class="mob-menu__link">
+                  Студія
+                </a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="./portfolio.html" class="mob-menu__link">
+                  Портфоліо
+                </a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-mehu-bottom">
+            <ul class="list mob-info">
+              <li class="mob-info__item-tel">
+                <a href="tel:+380961111111" class="mob-list__tel">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="mob-menu__item-message">
+                <a href="mailto:info@devstudio.com" class="mob-info__email">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="list networks">
+              <li class="networks__item">
+                <a href="#" class="networks__list">
+                  Instagram
+                </a>
+              </li>
+              <li class="networks__item">
+                <a href="#" class="networks__list">
+                  Twitter
+                </a>
+              </li>
+              <li class="networks__item">
+                <a href="#" class="networks__list">
+                  Facebook
+                </a>
+              </li>
+              <li class="networks__item">
+                <a href="#" class="networks__list">
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- </div> -->
+        </div>
       </div>
     </header>
     <main>
@@ -97,7 +212,7 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-div">
+                <div class="portfolio-div tablet">
                   <h2 class="portfolio__cardtitle">Технокряк</h2>
                   <p class="portfolio__subtitle">Веб-сайт</p>
                 </div>

@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container flex">
         <nav class="site-nav">
           <a href="#" class="logo site-nav__logo">
@@ -46,7 +46,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="item-message">
+          <li class="list__item-message">
             <a href="tel:+380961111111" class="list__tel">
               <svg class="list__icon-tel" width="10" height="16">
                 <use xlink:href="./images/icons.svg#icon-smartphone"></use>
@@ -55,8 +55,82 @@
             </a>
           </li>
         </ul>
+        <!--? мобільне меню  кнопка-->
+
+        <button type="button" class="menu-open-btn">
+          <svg class="menu-open-btn__svg" width="24" height="16">
+            <use xlink:href="./images/icons.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <!--? мобільне меню -->
+
+      <div class="mob-menu is-hidden">
+        <div class="container mob-container">
+          <div class="mob-mehu-top">
+            <button type="button" class="menu-close-btn">
+              <svg class="menu-close-btn__svg" width="19" height="19">
+                <use xlink:href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <!-- <div class="mob-container"> -->
+
+            <ul class="list mob-menu__nav">
+              <li class="mob-menu__item">
+                <a href="./index.html" class="mob-menu__link">
+                  Студія
+                </a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="./portfolio.html" class="mob-menu__link">
+                  Портфоліо
+                </a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-mehu-bottom">
+            <ul class="list mob-info">
+              <li class="mob-info__item-tel">
+                <a href="tel:+380961111111" class="mob-list__tel">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="mob-menu__item-message">
+                <a href="mailto:info@devstudio.com" class="mob-info__email">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="list networks">
+              <li class="networks__item">
+                <a href="#" class="networks__list">
+                  Instagram
+                </a>
+              </li>
+              <li class="networks__item">
+                <a href="#" class="networks__list">
+                  Twitter
+                </a>
+              </li>
+              <li class="networks__item">
+                <a href="#" class="networks__list">
+                  Facebook
+                </a>
+              </li>
+              <li class="networks__item">
+                <a href="#" class="networks__list">
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </header>
     <main>
       <section class="section hero">
         <div class="overlay">
@@ -133,7 +207,7 @@
         </div>
       </section>
 
-      <!-- <section class="section">
+      <section class="section specifics">
         <div class="container picture">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="list pic">
@@ -172,7 +246,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <section class="section team">
         <div class="container ourteam">
@@ -212,13 +286,10 @@
                   "
                   media="(min-width: 320px)"
                 />
-                <img
-                  src="./images/team-img1.jpg"
-                  alt=" фото игорь демьяненко"
-                />
+                <img src="./images/team-img1.jpg" alt=" фото Ігор Дем'яненко" />
               </picture>
               <div class="portrait">
-                <h3 class="portrait__name">Игорь Демьяненко</h3>
+                <h3 class="portrait__name">Ігор Дем'яненко</h3>
                 <p class="portrait__text">Product Designer</p>
                 <ul class="portrait-list portrait__list">
                   <li class="portrait__item">
@@ -282,13 +353,10 @@
                   "
                   media="(min-width: 320px)"
                 />
-                <img
-                  src="./images/team-img2.jpg"
-                  alt=" фото игорь демьяненко"
-                />
+                <img src="./images/team-img2.jpg" alt=" фото Ольга Репіна" />
               </picture>
               <div class="portrait">
-                <h3 class="portrait__name">Ольга Репина</h3>
+                <h3 class="portrait__name">Ольга Репіна</h3>
                 <p class="portrait__text">Frontend Developer</p>
                 <ul class="portrait-list portrait__list">
                   <li class="portrait__item">
@@ -352,13 +420,10 @@
                   "
                   media="(min-width: 320px)"
                 />
-                <img
-                  src="./images/team-img3.jpg"
-                  alt=" фото игорь демьяненко"
-                />
+                <img src="./images/team-img3.jpg" alt=" фото Микола Тарасов" />
               </picture>
               <div class="portrait">
-                <h3 class="portrait__name">Николай Тарасов</h3>
+                <h3 class="portrait__name">Микола Тарасов</h3>
                 <p class="portrait__text">Marketing</p>
                 <ul class="portrait-list portrait__list">
                   <li class="portrait__item">
@@ -422,13 +487,10 @@
                   "
                   media="(min-width: 320px)"
                 />
-                <img
-                  src="./images/team-img4.jpg"
-                  alt=" фото игорь демьяненко"
-                />
+                <img src="./images/team-img4.jpg" alt=" фото Михайло Єрмаков" />
               </picture>
               <div class="portrait">
-                <h3 class="portrait__name">Михаил Ермаков</h3>
+                <h3 class="portrait__name">Михайло Єрмаков</h3>
                 <p class="portrait__text">UI Designer</p>
                 <ul class="portrait-list portrait__list">
                   <li class="portrait__item">
@@ -525,7 +587,7 @@
 
     <!-- todo footer -->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-content">
         <div class="div-address">
           <a href="#" class="logo div-address__logofooter">
@@ -592,8 +654,6 @@
           </ul>
         </div>
 
-       
-
         <div class="form-footer">
           <p class="form-footer__title">Подпишитесь на рассылку</p>
           <form class="form-footer__input">
@@ -612,7 +672,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!--todo  modal -->
 
@@ -720,5 +780,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
