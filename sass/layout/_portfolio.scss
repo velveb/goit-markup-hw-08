@@ -53,38 +53,24 @@
 /* сітка портфоліо */
 
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 34px;
-
-  // @media screen and (max-width: 1200px) {
-  //   display: flex;
+  // display: flex;
   //   flex-wrap: wrap;
-  //   margin-left: -30px;
-  // }
+  //   padding-top: 34px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 34px;
+  }
 }
 /* сітка портфоліо */
 .item__portfolio {
   list-style: none;
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-
-  // @media screen and (max-width: 1200px) {
-  //   list-style: none;
-  //   width: calc(100% / 2 - 30px);
-  //   margin-left: 30px;
-  // }
-
-  /* сітка портфоліо */
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
-
-  &:nth-child(-n + 6) {
+  &:not(:last-child) {
     margin-bottom: 30px;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 768px) {
     list-style: none;
     width: calc((100% - 30px) / 2);
     margin-right: 30px;
@@ -99,6 +85,18 @@
     &:nth-child(3) {
       margin-right: 30px;
     }
+  }
+  @media screen and (min-width: 1200px) {
+    list-style: none;
+    width: calc((100% - 60px) / 3);
+    // margin-right: 30px;
+
+    // .item__portfolio:nth-child(3n) {
+    //   margin-right: 0;
+    // }
+    // .item__portfolio:nth-child(-n + 6) {
+    //   margin-bottom: 30px;
+    // }
   }
 }
 
@@ -144,7 +142,10 @@
 }
 
 .tablet {
-  @media screen and (max-width: 1200px) {
+  // @media screen and (min-width: 768px) {
+  //   padding-bottom: 56px;
+  // }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     padding-bottom: 56px;
   }
 }
