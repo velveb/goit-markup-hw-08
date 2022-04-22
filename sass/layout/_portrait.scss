@@ -1,6 +1,4 @@
 .list-portrait {
-  // display: flex;
-
   margin-bottom: -30px;
   @media screen and (min-width: 768px) {
     display: flex;
@@ -14,10 +12,8 @@
 
 .list-portrait__item {
   min-width: 270px;
-
   margin-bottom: 30px;
 
-  // min-width: 254px;
   @media screen and (min-width: 768px) {
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
@@ -26,18 +22,6 @@
   @media screen and (min-width: 1200px) {
     width: 270px;
   }
-}
-
-.list-portrait__item {
-  // min-width: 290px;
-
-  // &:not(:last-child) {
-  //   margin-bottom: 30px;
-  // }
-
-  // @media screen and (min-width: 1200px) {
-  //   // margin-left: 30px;
-  // }
 }
 
 .portrait {

@@ -16,10 +16,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-div {
-  outline: 2px solid #8400ff;
-}
-
 p,
 h1,
 h2,
@@ -527,6 +523,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-bottom: 0px;
+  }
+}
+
 .list__about {
   margin-bottom: -30px;
 }
@@ -854,15 +856,18 @@ body {
 }
 
 /* сітка портфоліо */
+.portfolio-list {
+  padding-top: 34px;
+}
+
 @media screen and (min-width: 768px) {
   .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 34px;
+    margin-left: -30px;
   }
 }
 
-/* сітка портфоліо */
 .item__portfolio {
   list-style: none;
 }
@@ -871,11 +876,20 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .item__portfolio {
-    list-style: none;
-    width: calc((100% - 30px) / 2);
-    margin-right: 30px;
+    width: calc((100% / 3) - 30px);
+    margin-left: 30px;
+  }
+  .item__portfolio:nth-child(-n + 6) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .item__portfolio {
+    width: calc((100% / 2) - 30px);
+    margin-left: 30px;
   }
   .item__portfolio:nth-child(2n) {
     margin-right: 0;
@@ -883,18 +897,9 @@ body {
   .item__portfolio:nth-child(-n + 8) {
     margin-bottom: 30px;
   }
-  .item__portfolio:nth-child(3) {
-    margin-right: 30px;
-  }
 }
 
-@media screen and (min-width: 1200px) {
-  .item__portfolio {
-    list-style: none;
-    width: calc((100% - 60px) / 3);
-  }
-}
-
+/* сітка портфоліо */
 .portfolio__cardtitle {
   margin-bottom: 4px;
   color: var(--primery-text-color);
@@ -1464,7 +1469,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
 
 @media screen and (min-width: 480px) {
